@@ -1,0 +1,486 @@
+﻿html, body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+/*#代表选择ID为header的标签*/
+.clean {
+    clear: both;
+}
+
+/*header*/
+#header {
+    /*background可以设置背景颜色图片之类的*/
+    position: relative;
+    height: 155px;
+    background: #fdbd2d;
+    /*border-bottom: 4px solid #fdbd2d;*/
+    /*margin-bottom: 10px;*/
+}
+
+#header .name {
+    height: 150px;
+    display: inline;
+    width: 250px;
+}
+
+#header .name img {
+    width: 220px;
+    font-size: 40px;
+    /*color:#f6c02b;*/
+    margin: 15px 10px 18px 10px;
+}
+
+#header .search {
+
+    folat: right;
+    text-align: right;
+    font-size: 15px;
+    margin-top: -55px;
+
+}
+
+
+#header .search .btn {
+    padding-top: 3px;
+}
+
+#header .search .form-control {
+    width: 30%;
+    display: inline;
+}
+
+#header .list{
+    float: left;
+    display: inline;
+}
+
+#header .btn-group .list{
+    display: inline;
+}
+
+#header .list .dropdown-menu {
+    position: relative;
+    float: none;
+}
+
+#header .top-nav {
+    height: 35px;
+    background: #f5f5f5;
+    border-bottom:1px solid #dad5d5;
+}
+
+#header .top-nav .btn {
+    border: 0px;
+    background: #f5f5f5;
+}
+
+#header .top-nav .btn-group {
+    float: right;
+}
+
+#header .back {
+    float:right;
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#header .back a {
+    color:#6c6b69;
+    text-decoration: none;
+    font-weight: 150;
+    font-size: 15px;
+}
+
+#header .back a:hover {
+    color:#6c6b69;
+    font-weight: 150;
+    font-size: 15px;
+}
+
+
+#navgation {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#navBar {
+    list-style: none;
+    background: #f5f5f5;
+    /*color设置字体颜色*/
+    color: #7a7874;
+    font-weight: 200;
+    text-align: center;
+    font-size: 16pt;
+    height: 30px;
+}
+
+    #navBar li {
+        float: left;
+        display: inline-block;
+        height: 30px;
+        width: 25%;
+        line-height: 30px;
+    }
+
+        #navBar li a {
+            color: #7a7874;
+            text-decoration: none;
+        }
+
+        #navBar li:hover {
+            color: #7a7874;
+            background: #fff;
+        }
+
+        #navBar li a:hover {
+            color: #7a7874;
+        }
+
+.card {
+    margin: 2%;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+}
+
+#main {
+    min-height: 410px;
+}
+
+#main_hot .recommend {
+    margin: 10px;
+}
+
+#main_new .recommend {
+    margin: 10px;
+}
+
+#recommend .recommend {
+    margin: 10px;
+}
+
+#footer {
+    height: 100px;
+    text-align: center;
+    font-size: small;
+    border-top: 4px solid #fdbd2d;
+    padding: 20px;
+    height: 100px;
+}
+
+#main {
+    padding-bottom: 10px;
+}
+/* Mian */
+#page_main .book {
+    width: 19%;
+    display: inline-block;
+    text-align: center;
+}
+
+    #page_main .book img {
+        height: 200px;
+        width: 90%;
+    }
+
+    #page_main .book a:hover {
+        text-decoration: none;
+    }
+
+    #page_main .book h4,small {
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        overflow: hidden;
+    }
+
+/*BookDetail*/
+#page_bookDetail {
+    padding: 50px 0;
+}
+
+#page_bookDetail .book_img {
+    display: block;
+    width: 100%;
+}
+
+/*BiddingDetail*/
+#page_biddingDetail {
+    padding: 50px 0;
+}
+
+#page_biddingDetail .seller {
+    margin: 60px auto;
+}
+
+#page_biddingDetail .seller label {
+    font-size: 20px;
+    padding-bottom: 10px;
+
+}
+
+#page_biddingDetail .seller a {
+    font-size: 20px;
+    padding-bottom: 10px;
+
+}
+
+#page_biddingDetail .book_image {
+    padding-top: 20px;
+    margin-left: 60px;
+}
+
+
+#page_biddingDetail .bg-warning {
+    height: 80px;
+}
+
+#page_biddingDetail .bidding-now{
+    display: inline;
+    float: left;
+    width: 15%;
+    height: 100%;
+    background:#d9534f;
+    margin-right: 20px;
+}
+
+#page_biddingDetail .bidding-now p{
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#page_biddingDetail .info {
+    margin-top: 10px;
+    display: inline;
+}
+
+#page_biddingDetail .info .countDown {
+    padding-top: 5px;
+    display: block;
+}
+
+#page_biddingDetail .info label {
+    padding-top: 5px;
+    display: block;
+}
+
+#page_biddingDetail .buy {
+    margin-top: 10px;
+
+}
+
+#page_biddingDetail .buy .btn{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+}
+
+#page_biddingDetail .buy .form-control{
+    width: 30%;
+    height: 50px;
+    display: inline;
+    margin-right: 20px;
+}
+
+#page_biddingDetail .wrap {
+    margin-bottom: 10px;
+}
+
+#page_biddingDetail .price {
+    margin: 5px 0px;
+
+    
+}
+
+#page_biddingDetail .price label {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    display: inline;
+}
+
+#page_biddingDetail .price span {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: inline;
+}
+
+#page_biddingDetail .col-md-3 {
+    /*border-left: 2px solid #f5f5f5;*/
+    margin-top: 10px;
+}
+
+#page_biddingDetail .more {
+    margin-left: 2px solid #f5f5f5;
+    height: 200px;
+}
+
+#page_biddingDetail .more .header{
+    margin-left: 2px solid #f5f5f5;
+    padding-left: 10px;
+    margin-top: -10px;
+}
+
+#page_biddingDetail .more .image-right {
+    margin: auto;
+    padding: 5px auto;
+    height: 150px;
+}
+
+#page_biddingDetail .more a {
+    width: 100%;
+}
+
+#page_biddingDetail .more .list {
+    list-style: none;
+}
+
+#page_biddingDetail .more .item {
+    display: block;
+    padding-bottom: 12px;
+    border: 3px solid #fff;
+}
+
+#page_biddingDetail .more .img {
+    display: block;
+    width: 180px;
+    height: 180px;
+}
+
+blockquote {
+    padding: 0;
+}
+
+/*Cart*/
+#page_cart .book_image {
+    /*border: #ccc solid 1px;*/
+    display: inline-block;
+    width: 90%;
+}
+#page_cart th {
+    text-align: center;
+}
+#page_cart table {
+    table-layout: fixed;
+}
+#page_cart .min-height {
+    height: 410px;
+}
+
+/*Search*/
+#page_serarch .book_image {
+    /*border: #ccc solid 1px;*/
+    display: inline-block;
+    width: 90%;
+}
+#page_serarch table {
+    table-layout: fixed;
+}
+#page_serarch th {
+    text-align: center;
+}
+
+/*Pay*/
+
+#Page_orderform {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Page_orderform table {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+}
+
+#Page_orderform .info .td-left{
+    width: 10%;
+}
+
+#Page_orderform .info .td-right{
+    width: 90%;
+}
+
+#Page_orderform .pay .center{
+    width: 50%;
+    text-align:center;
+}
+
+.pay .btn {
+    margin-top: 20px;
+}
+
+.pay .order-title {
+    font-size: 24px;
+}
+
+.order-form .order-title {
+    font-size: 24px;
+}
+
+.order-form tr {
+    line-height: 50px;
+}
+
+.pay tr {
+    line-height: 50px;
+}
+
+/*Completed*/
+#Page_success {
+    width: 100%;
+}
+
+#Page_success .notice {
+    font-size: 20px;
+}
+
+#Page_success h1 {
+
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+#Page-wrapper {
+    width: 60%;
+    margin: 10px auto;
+}
+
+#Page-wrapper .form-control{
+    width: 85%;
+    display:inline;
+}
+
+#Page-wrapper .help-block{
+    display:inline;
+}
+
+#Page-wrapper .form-group label {
+    display: block;
+}
+
+/*#Page-wrapper .form-group .bidding {
+    display: inline;
+}*/
+
+#Page-wrapper .form-group .isbidding {
+    text-anlign: center;
+}
+
+#Page-wrapper .btn-success {
+    margin-right: 50px;
+}
+
+
+#Page-wrapper .btn-default {
+    margin-left: 50px;
+}

@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="Web_Master_MasterPage2" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>坐标系·网上书店</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/index.css" rel="stylesheet" type="text/css" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <%--<link rel="shortcut icon" href="../images/2.png" />--%>
+    <script type="text/javascript" src="http://www.daimajiayuan.com/download/jquery/jquery-1.10.2.min.js"></script>  
+    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap-select/2.0.0-beta1/js/bootstrap-select.js"></script>   
+    <script type="text/javascript" src="<%=ResolveUrl("../js/jQuery-1.11.3.js") %>"></script>
+    <script src="<%=ResolveUrl("../js/bootstrap.min.js") %>" type="text/javascript"></script>
+
+
+
+</head>
+<body>
+        <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <form id="form1" runat="server" defaultbutton="BtnSearch">
+
+        <div id="header">
+            <div class="top-nav">
+                <div class ="list">    
+                <button class="btn btn-default dropdown-toggle" type="button" id="DropDownList1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       网上书店
+                       <span class="caret"></span>
+                 </button>     
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="main.aspx">正版商城</a></li>
+                    <li><a href="OldBookMain.aspx">二手商城</a></li>
+                  </ul>                     
+            </div>
+                    <div class="btn-group">
+                        <asp:Button class="btn btn-default" ID="btn_Login" runat="server" Text="登录" OnClick="btnLogin_Click"/>
+                        <asp:Button class="btn btn-default" ID="btn_Register" runat="server" Text="注册" OnClick="btnRegister_Click" />
+                        <asp:Button class="btn btn-default" ID="btn_cart" runat="server" Text="购物车" OnClick="btnCart_Click" />
+                    <div class="list ">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="DropDownList2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       用户信息
+                       <span class="caret"></span>
+                    </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="MyInfo.aspx">个人信息</a></li>
+                        <li><a href="MyShopInfo.aspx">店铺信息</a></li>
+                        
+                      </ul>  
+                    </div>
+                    </div>
+            </div>
+
+                <div class="name">
+                    <img src ="images/3.png" alt="网上书店"/>
+                </div>
+
+
+                <div class="search">
+                  <asp:TextBox ID="Key_Word"  class="form-control" runat="server"></asp:TextBox>
+            <asp:Button ID="BtnSearch"  class="btn btn-warning" type="submit" runat="server" Text=" 搜 索 " BackColor="#DEA774" BorderColor="#666666" OnClick="BtnSearch_Click" />
+                </div>
+
+        </div>
+
+        <div id="navigation">
+            <ul id="navBar">
+                <li>
+                    <a href="./OldBookMain.aspx">二手商城</a>
+                </li>
+                <li>
+                    <a href="./OldBookForBidding.aspx">竞拍图书</a>
+                </li>
+                <li>
+                    <a href="./BookRelease.aspx">我要卖书</a>
+                </li>
+                <li>
+                    <a href="./MyBook1.aspx">我的图书</a>
+                </li>
+                <div class="clean"></div>
+            </ul>
+        </div>
+
+        <div id="main" class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="footer">
+            <span>制作班级：软件1501 </span><br />
+            <span>&copy; 胡家欣 薛宇莹 张诗渊 版权所有</span>
+        </div>
+    </form>
+    <!-- jQuery -->
+    <script src="../Admin/vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../Admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../Admin/vendor/metisMenu/metisMenu.min.js"></script>
+</body>
+</html>
+

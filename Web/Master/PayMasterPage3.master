@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PayMasterPage3.master.cs" Inherits="Web_Master_PayMasterPage3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <title>坐标系·网上书店</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/index.css" rel="stylesheet" type="text/css" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <%--<link rel="shortcut icon" href="../images/2.png" />--%>
+    <link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://www.daimajiayuan.com/download/jquery/jquery-1.10.2.min.js"></script>  
+    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap-select/2.0.0-beta1/js/bootstrap-select.js"></script>   
+    <script type="text/javascript" src="<%=ResolveUrl("../js/jQuery-1.11.3.js") %>"></script>
+    <script src="<%=ResolveUrl("../js/bootstrap.min.js") %>" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server" >
+    <div id="header">
+            <div class="top-nav">
+            
+                <div class="btn-group">
+                    <asp:Button class="btn btn-default" ID="btnLogin" runat="server" Text="登录" OnClick="btnLogin_Click"/>
+                    <asp:Button class="btn btn-default" ID="btnRegister" runat="server" Text="注册" OnClick="btnRegister_Click" />
+                    <asp:Button class="btn btn-default" ID="btnHelp" runat="server" Text="购物车" OnClick="btnHelp_Click" />
+                </div>
+            </div>
+
+                <div class="name">
+                    <img src ="images/3.png" alt="网上书店"/>
+                </div>
+                    <div class ="back">
+                <a href = "Main.aspx">返回主页</a>
+            </div>
+
+
+        </div>
+        <div id="main" class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        <div id="footer">
+            <span>制作班级：软件1501 </span><br />
+            <span>&copy; 胡家欣 薛宇莹 张诗渊 版权所有</span>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+	
+}
+#header {
+    /*background可以设置背景颜色图片之类的*/
+    position: relative;
+    height: 140px;
+    background: #fdbd2d;
+    border-bottom: 4px solid #fdbd2d;
+    position: relative;
+}
+
+#header .name {
+    height: 120px;
+    display: inline;
+    width: 250px;
+    margin-top: 20px;
+}
+
+#header .name h1 {
+    width: 220px;
+    display: inline;
+    font-size: 40px;
+    color:#f6c02b;
+    margin: 20px 10px 13px 10px;
+}
+
+#header .name h2 {
+
+    display: inline;
+    font-size: 30px;
+    color:#3a3a3a;
+    margin: 20px 10px 13px 5px;
+}
+
+#header .back {
+    float:right;
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#header .welcome label {
+    color:#a6bcd9;
+    font-weight: 150;
+}
+
+#header .welcome a {
+    color:#a6bcd9;
+    text-decoration: none;
+    font-weight: 150;
+}
+
+#header .back a {
+    color:#6c6b69;
+    text-decoration: none;
+    font-weight: 150;
+    font-size: 15px;
+}
+
+#header .back a:hover {
+    color:#6c6b69;
+    font-weight: 150;
+    font-size: 15px;
+}
+
+#header .top-nav {
+    height: 35px;
+    background: #f5f5f5;
+    border-bottom:1px solid #dad5d5;
+}
+
+#header .top-nav .welcome {
+    float: right;
+}
+
+#nav {
+    height: 70px;
+     border-bottom: 2px solid #c3c3c3;
+}
+
+#navBar {
+    list-style: none;
+    /*color设置字体颜色*/
+    color: #000000;
+    text-align: center;
+    font-size: 14pt;
+    height: 80px;
+    margin: auto;
+    padding-top: 20px;
+    margin-bottom: -10px;
+}
+
+#navBar li{
+    margin-bottom: 20px;
+    float: left;
+    display: inline-block;
+    height: 50px;
+    width: 24%;
+    line-height: 30px;
+}
+
+#form {
+	background: #fff;
+    width: 60%;
+	margin: 0 auto;
+    margin-bottom: 0;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+#form .register-table {
+    width: 100%;
+    line-height: 40px;
+    padding: 5px;
+}
+
+#form .register-table .title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 10px 0;
+}
+#form .register-table .left {
+    width: 25%;
+    padding-right: 10px;
+    font-size: 16px;
+    text-align: right;
+    
+}
+
+#form .register-table td {
+    padding: 5px;
+}
+
+#form .register-table .register .btn-danger {
+    float:left;
+}
+
+
+
+#form .register-table .register .btn-default {
+    float: right;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+    text-align: center;
+    font-size: small;
+    border-top: 4px solid #fdbd2d;
+}
